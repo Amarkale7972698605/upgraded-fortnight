@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vidhi Tech Solution Pvt Ltd</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    background: #111;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #00c6ff;
+}
+
+/* HERO */
+.hero {
+    background: url('https://images.unsplash.com/photo-1518770660439-4636190af475') no-repeat center/cover;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+/* SECTION */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* PRODUCTS */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #f4f4f4;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* CONTACT BOX */
+.contact-box {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* FORM */
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background: #0072ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Vidhi Tech Solution Pvt Ltd</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Your One-Stop Tech Shop</h1>
+    <p>New & Refurbished Laptops | Computers | Printers | CCTV</p>
+</section>
+
+<section class="section" id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+            <h3>New Laptops</h3>
+            <p>Latest models from top brands.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04">
+            <h3>Desktop Computers</h3>
+            <p>Custom builds and branded PCs.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd">
+            <h3>Printers</h3>
+            <p>Inkjet, Laser & Multifunction printers.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853">
+            <h3>Refurbished Laptops</h3>
+            <p>Budget-friendly, tested & reliable systems.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7">
+            <h3>Refurbished Computers</h3>
+            <p>High-performance used desktops at low cost.</p>
+        </div>
+
+        <div class="card">
+            <h3>CCTV Systems</h3>
+            <p>Security cameras, DVR/NVR & installation available.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="products">
+
+        <div class="card">
+            <h3>Repair Services</h3>
+            <p>Laptop, desktop & printer repair.</p>
+        </div>
+
+        <div class="card">
+            <h3>CCTV Installation</h3>
+            <p>Complete setup for homes & offices.</p>
+        </div>
+
+        <div class="card">
+            <h3>Networking</h3>
+            <p>LAN/WiFi setup & maintenance.</p>
+        </div>
+
+        <div class="card">
+            <h3>AMC Support</h3>
+            <p>Annual maintenance contracts.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <h2>Contact / Inquiry</h2>
+
+    <!-- CONTACT DETAILS -->
+    <div class="contact-box">
+        <p><strong>Name:</strong> Amar Vikram Kale</p>
+        <p><strong>Phone:</strong> <a href="tel:7972698605">7972698605</a></p>
+        <p><strong>Email:</strong> <a href="mailto:amarkale8421@gmail.com">amarkale8421@gmail.com</a></p>
+        <p><strong>Address:</strong> At Post Shingoli, Near Avishkar Footwear, Shingoli, Darshiv - 413501</p>
+    </div>
+
+    <!-- FORM -->
+    <form onsubmit="sendMsg(event)">
+        <input type="text" placeholder="Name" required><br>
+        <input type="tel" placeholder="Mobile Number" required><br>
+        <textarea placeholder="Your Requirement"></textarea><br>
+        <button type="submit">Send Inquiry</button>
+    </form>
+
+</section>
+
+<footer>
+    <p>© 2026 Vidhi Tech Solution Pvt Ltd</p>
+    <p>Contact: 7972698605 | amarkale8421@gmail.com</p>
+</footer>
+
+<script>
+function sendMsg(e){
+    e.preventDefault();
+    alert("Inquiry Submitted! We will contact you soon.");
+}
+</script>
+
+</body>
+</html>
